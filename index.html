@@ -4,11 +4,28 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ledit</title>
+	<title>Ledit</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://electogenius.github.io/electo/average.css" type="text/css" media="all" />
 </head>
 <body>
-	demo
-	<leditor id="demo"></leditor>
+	<h1>Ledit</h1>
+	A smol browser based editor, for EGCode?
+	<h2>Ledit in action</h2>
+	<div id="demo"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/rainbow/1.2.0/js/rainbow.min.js" integrity="sha512-1iwOtzgGTn5KiNhyTHdGh8IpixXZnsD0vRXUqNUgWqET4Uv3vDXuHq55cGjdJ+qNBL/HxH815N7qvLxgzA1dYw==" crossorigin="anonymous"></script>
 	<script src="ledit.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		var ee = new Ledit.or({
+			source: document.getElementById("demo"),
+			value: 
+`log(	tab		tab)
+\t\t\tlog(tab)`,
+			height: "200px",
+			font: "'Roboto Mono', monospace"
+		})
+		ee.start()
+	</script>
 </body>
 </html>
